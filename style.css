@@ -1,0 +1,18 @@
+
+
+.cat {
+    position: relative;
+    top: 90px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.card-img {
+    width: 100%;
+    height: 10rem;
+    font-size: 90px;
+}
