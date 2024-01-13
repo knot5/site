@@ -33,3 +33,10 @@ resetBtn.onclick = function() {
   count = 0
   countLabel.textContent = count;
 }
+
+
+randomBtn.onclick = () => {
+  
+  countLabel.textContent = Math.floor(Math.random() * 100);
+  count = countLabel.textContent;
+}
