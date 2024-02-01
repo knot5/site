@@ -104,3 +104,17 @@ svg:hover #dark2 {
     
     font-size: 2em;
 }
+
+
+#container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 500px;
+}
+
+.input-dice {
+    text-align: center;
+    font-size: 1rem;
+    width: 150px;
+}
