@@ -83,7 +83,7 @@ function rollDice(){
 }
 
 
-
+const buttonSecret = document.getElementById('buttonSecret')
 const boxRezultat = document.getElementById('boxRezultat')
 const buttonNu = document.getElementById('buttonNu');
 const buttonDa = document.getElementById('buttonDa');
@@ -94,6 +94,7 @@ buttonDa.addEventListener('click', event => {
   newP.setAttribute('id','newP');
   newP.textContent = 'Da..'
   newP.style.fontSize = '2rem'
+  newP.style.color = 'tomato';
   boxRezultat.appendChild(newP);
 });
 
@@ -113,11 +114,18 @@ buttonNu.addEventListener('click', event => {
   newP.setAttribute('id','newP');
   newP.textContent = 'Ia mai gandeste-te'
   newP.style.fontSize = '2rem'
+  newP.style.color = 'tomato';
   boxRezultat.appendChild(newP);
 });
 
+buttonSecret.addEventListener('click', event => {
+  newP.setAttribute('id','newP');
+  newP.textContent = 'Esti destept'
+  newP.style.fontSize = '2rem'
+  newP.style.color = 'lightgreen'
 
-
+  boxRezultat.appendChild(newP);
+});
 
 buttonReset.addEventListener('click', event => {
     
