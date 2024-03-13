@@ -25,7 +25,30 @@
 
 
 
-<body>
+<body id="body">
+
+<div id="container">
+  <h2>Hai sa vedem daca esti prost.</h2>
+
+      <button class="but" id="buttonDa">Da</button>
+      <button class="but" id="buttonNu">Nu</button>
+     
+
+      <button class="but" id="buttonReset">Reset</button> <br>
+      <div id="boxRezultat">
+        <label style="font-size: 2rem;" for="">Rezultat:</label>
+      </div>
+      <br><br><br>
+
+      
+
+      <button onclick="showSite()" id="showSite">Show Site</button>
+      <button onclick="hideSite()" id="hideSite">Hide Site</button>
+
+      
+</div>
+
+<div id="siteContent">
     
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 border-bottom border-warning sticky-top">
@@ -287,8 +310,9 @@
   
   </section>
 
+  <!-- Dice roller -->
 
-  <section>
+ <section>
     <div id="container">
       <h1>Dice Roller</h1>
       <label for=""># of dice</label>
@@ -299,6 +323,51 @@
   </div>
   </section>
 
+  <!-- Impartire -->
+
+  <section>
+<div id="container">
+<p>Impartire</p>
+<input type="text" id="myInput1" placeholder="a"> <br><br>
+<input type="text" id="myInput2" placeholder="b"> <br><br>
+<button id="myBtn" onclick='calculate()'>Calculate</button> <br><br>
+<button onclick="clearResult()">Clear</button>
+<p>Result: <label id="myLabel" for="">0</label></p> 
+<button onclick="addColor()">Da</button>
+<button onclick="removeColor()">Nu</button>
+
+  </section>
+
+  <section>
+    
+    <div id="calculator">
+      
+      <input id="display" readonly type="text">
+      <div id="keys">
+          <button class="operator-btn" onclick="appendToDisplay('+')">+</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button class="operator-btn" onclick="appendToDisplay('-')">-</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button class="operator-btn" onclick="appendToDisplay('*')">*</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button class="operator-btn" onclick="appendToDisplay('/')">/</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button class="operator-btn" onclick="clearDisplay()">C</button>
+  
+  
+      </div>
+  </div>
+  </section>
+
+</div>
   
 
 </body>
